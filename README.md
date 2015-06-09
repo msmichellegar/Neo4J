@@ -67,3 +67,20 @@ Create example code to demonstrate its use with a simple Node.js app.
 #### What issues might there be with using Neo4J?
 
 Neo4J uses simplified graph theory, so relationships can only be uni-directional -- eg. if you have 20 bi-directional relationships then that requires 40 "relationships"
+
+
+
+##How to install
+###Download Neo4J
+Download it from the website
+[http://neo4j.com/download/]
+
+
+###Download Java inorder to run it.
+Download Oracle Java 8 or OpenJDK.
+For Ubuntu users you can find instructions here to download & install the Oracle Java 8 [http://askubuntu.com/questions/521145/how-to-install-oracle-java-on-ubuntu-14-04]
+
+After installing Java extract the Neo4J files and run it from your terminal:
+From the containing folder
+
+`$ ./bin/neo4j start`
