@@ -67,3 +67,5 @@ Create example code to demonstrate its use with a simple Node.js app.
 #### What issues might there be with using Neo4J?
 
 Neo4J uses simplified graph theory, so relationships can only be uni-directional -- eg. if you have 20 bi-directional relationships then that requires 40 "relationships"
+In order to delete a node, all relationships to it must be deleted, this makes it quite laborious to delete a single entry. There are also interesting issues associated with Neo4J - for example, queries run forever by default, meaning that badly coded search queries will keep working.
+Code injection with Cypher is an important issue since the language doesn't use curly braces or <> to execute code, it can escape filters designed to prevent malicious javascript injection.
