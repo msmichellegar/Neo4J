@@ -57,27 +57,15 @@ Neo4J is the most popular graph database, and is used by a number of notable com
 
 ### How?
 
-#### How do you setup this database?
-#### How do you use this database?
-#### What Node.js modules are available for it?
-#### Which one would you use, why, and how?
+####How to install
 
-Create example code to demonstrate its use with a simple Node.js app.
-
-#### What issues might there be with using Neo4J?
-
-Neo4J uses simplified graph theory, so relationships can only be uni-directional -- eg. if you have 20 bi-directional relationships then that requires 40 "relationships".
-In order to delete a node, all relationships to it must be deleted, this makes it quite laborious to delete a single entry. There are also interesting issues associated with Neo4J - for example, queries run forever by default, meaning that badly coded search queries will keep working.
-Code injection with Cypher is an important issue since the language doesn't use curly braces or <> to execute code, it can escape filters designed to prevent malicious javascript injection.
-
-
-##How to install
-###Download Neo4J
+#####Download Neo4J
+>>>>>>> d6a63aed184057e34426bcbe56dd2516fce83c49
 Download it from the website
 [http://neo4j.com/download/]
 
 
-###Download Java inorder to run it.
+#####Download Java inorder to run it.
 Download Oracle Java 8 or OpenJDK.
 For Ubuntu users you can find instructions here to download & install the Oracle Java 8 [http://askubuntu.com/questions/521145/how-to-install-oracle-java-on-ubuntu-14-04]
 
@@ -86,7 +74,7 @@ From the containing folder
 
 `$ ./bin/neo4j start`
 
-## Neo4J With node
+#### Neo4J With node
 
 Neo4J has a inbuilt HTTP REST interface which can be used with the Neo4J database. You can use it with the Node request module.
 
@@ -133,3 +121,9 @@ runCypherQuery('CREATE (somebody:Person { name: {name}, from: {company}, age: {a
     }
 );
 ```
+
+#### What issues might there be with using Neo4J?
+
+Neo4J uses simplified graph theory, so relationships can only be uni-directional -- eg. if you have 20 bi-directional relationships then that requires 40 "relationships".
+In order to delete a node, all relationships to it must be deleted, this makes it quite laborious to delete a single entry. There are also interesting issues associated with Neo4J - for example, queries run forever by default, meaning that badly coded search queries will keep working.
+Code injection with Cypher is an important issue since the language doesn't use curly braces or <> to execute code, it can escape filters designed to prevent malicious javascript injection.
