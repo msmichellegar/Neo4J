@@ -1,5 +1,21 @@
-# Neo4J
-Learnings on Neo4J and graph databases
+# Neo4J: What, Why, How
+
+### What?
+
+##### What sort of database is Neo4J?
+
+Neo4J is a GRAPH database. Graph databases don't organise information via columns and tables, but rather through *relationships* that reveal patterns and connections between bits of data.
+
+Graph databases are set up as a collection of labeled nodes, connected by relationships. Both nodes and relationships record data and hold arbitrary properties (key-value pairs). They can be labelled with zero or more labels to add further data relationships between nodes.
+
+##### What other databases is it similar to?
+
+Neo4J was the first and most well-known graph database, but other, similar databases exist. These include:
+
+* AllegroGraph, designed for LinkedIn
+* Apache Giraph, used by Facebook
+* Trinity, created by Microsoft
+* GraphDB, InfiniteGraph, OrientDB, InfoGrid, HypergraphDB...
 
 ### Why?
 
@@ -22,23 +38,6 @@ Cisco: content management, master data management
 National Geographic: real-time recommendations
 Dating: eHarmony, Hinge, Meetic, Bang with Friends
 
-### What?
-
-##### What sort of database is it?
-Neo4J is a GRAPH database -- graph databases don't organise information via columns, but rather through relationships
-Graph databases reveal patterns and connections between bits of data
-Set up as a collection of nodes connected by relationships
-Labeled nodes (for informational entities) are connected via directed, typed relationships
-Both nodes and relationships hold arbitrary properties (key-value pairs)
-Data is recorded in nodes and relationships and can be labelled with zero or more labels to add further data relationships between nodes
-Neo4J uses simplified graph theory, so relationships can only be uni-directional -- if you have 20 bi-directional relationships then that requires 40 "relationships"
-
-##### What other databases is it similar to?
-AllegroGraph, designed for LinkedIn
-Apache Giraph, used by Facebook
-Trinity, by Microsoft
-GraphDB, InfiniteGraph, OrientDB, InfoGrid, HypergraphDB
-
 ### How?
 
 ##### How do you setup this database?
@@ -47,3 +46,7 @@ GraphDB, InfiniteGraph, OrientDB, InfoGrid, HypergraphDB
 ##### Which one would you use, why, and how?
 
 Create example code to demonstrate its use with a simple Node.js app.
+
+##### What issues might there be with using Neo4J?
+
+Neo4J uses simplified graph theory, so relationships can only be uni-directional -- if you have 20 bi-directional relationships then that requires 40 "relationships"
